@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 ol,
 ul {
   margin: 0;
@@ -156,4 +160,57 @@ ul {
   background-image: url("./images/flower.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.news {
+  background-color: #edeff0;
+}
+
+.news .container {
+  display: grid;
+  grid-template-columns: 848px 263px;
+}
+
+.news .left .text {
+  width: 437px;
+}
+
+.news .left li {
+  position: relative;
+
+  display: flex;
+  padding: 25px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.news .left li button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.news .left li button:hover {
+  transform: scale(1.1);
+}
+.gray {
+  fill: #bcbfc2;
+}
+
+.red {
+  fill: #eb5757;
+}
+
+.news .left li .info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.news .left li .count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
