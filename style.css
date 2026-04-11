@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  background-color: #edeff0;
+  padding-bottom: 20px;
+  position: relative;
+  height: 1670px;
+}
+.main .dark {
+  background: #262d33;
+  height: 530px;
+}
+
+.cars,
+.cat,
+.text1,
+.text2,
+.text3,
+.text4 {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main .container {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(4, 263px);
+  grid-template-rows: 55px 130px 570px 370px 170px 170px;
+  grid-template-areas:
+    "navigation navigation navigation navigation"
+    "posters posters posters posters"
+    "head head head head"
+    "cars cars art columns"
+    "cat text1 text2 columns"
+    "cat text3 text4 columns";
+  grid-column-gap: 29px;
+  grid-row-gap: 30px;
+}
+
+.navigation {
+  grid-area: navigation;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #262d33;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.posters {
+  background-color: #30363d;
+  grid-area: posters;
+  display: flex;
+
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.posters li {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 284px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.posters li:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 75px;
+  background-color: #4b5157;
+  transform: translateX(24px);
+}
+
+.posters img {
+  width: 65px;
+  height: 65px;
+}
+.posters p {
+  width: 155px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.head {
+  background-image: url("./images/moutine.png");
+  grid-area: head;
+  background-size: cover;
+}
+
+.cars {
+  background-image: url("./images/car.png");
+
+  grid-area: cars;
+  background-repeat: no-repeat;
+  background-position: right top 18px;
+}
+
+.art {
+  background-image: url("./images/hand.png");
+  grid-area: art;
+}
+.columns {
+  background: #6e99ae;
+  grid-area: columns;
+}
+.cat {
+  grid-area: cat;
+}
+.text1 {
+  grid-area: text1;
+}
+.text2 {
+  grid-area: text2;
+}
+
+.text3 {
+  grid-area: text3;
+}
+.text4 {
+  grid-area: text4;
+}
+
+.flower {
+  height: 270px;
+  background-image: url("./images/flower.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
