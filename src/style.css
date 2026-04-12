@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
 }
 
@@ -160,7 +160,7 @@ ul {
   background-image: url("./images/flower.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .news {
   background-color: #edeff0;
