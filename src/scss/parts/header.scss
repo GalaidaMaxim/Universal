@@ -1,0 +1,143 @@
+header {
+  & .top {
+    display: flex;
+    border-bottom: 1px solid #d9dadb;
+    align-items: center;
+    & .menu {
+      padding: 0;
+      gap: 15px;
+      padding-right: 27px;
+      display: flex;
+      height: 50px;
+      background-color: transparent;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-right: 1px solid #d9dadb;
+    }
+    & form {
+      position: relative;
+      width: 733px;
+      height: 50px;
+      & input {
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-left: 55px;
+        padding-right: 55px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        &::placeholder {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #939699;
+        }
+      }
+      & label {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 15px;
+        left: 25px;
+      }
+    }
+    & .image {
+      margin-top: auto;
+      width: 66px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background-color: #999999;
+      & .thumb {
+        width: 60px;
+      }
+    }
+    & .text {
+      margin-left: 10px;
+      & p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        &.gray {
+          color: #939699;
+        }
+      }
+    }
+    & .signin {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      & p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4b5157;
+      }
+
+      & .thumb {
+        width: 18px;
+      }
+    }
+  }
+  & .bottom {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    & p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #4b5157;
+    }
+    & .freedom {
+      display: flex;
+      align-items: center;
+      gap: 15;
+      & .thumb {
+        width: 100px;
+      }
+    }
+    & .title {
+      margin-left: 131px;
+      margin-right: auto;
+    }
+    & .info {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+
+      & .wid {
+        width: 195px;
+      }
+      & .flex-center {
+        width: 20px;
+        height: 20px;
+      }
+      & .weather {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
