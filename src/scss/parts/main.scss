@@ -90,9 +90,108 @@
     }
   }
   & .head {
-    background-image: url("../../images/moutine.png");
     grid-area: head;
     background-size: cover;
+    display: grid;
+    grid-template-columns: auto 263px;
+    & .left {
+      background-image: linear-gradient(
+          0deg,
+          rgba(64, 48, 61, 0.35),
+          rgba(64, 48, 61, 0.35)
+        ),
+        url("../../images/moutine.png");
+
+      & .person {
+        display: flex;
+        align-items: center;
+        & .avatar {
+          background-image: url("../../images/man.png");
+
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+        }
+        & .info {
+          margin-left: 10px;
+        }
+        & .name {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+
+          color: #ffffff;
+        }
+        & .role {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          white-space: nowrap;
+          align-items: center;
+          opacity: 0.4;
+          color: #ffffff;
+        }
+      }
+    }
+    & .right {
+      background-color: white;
+      & h2 {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        color: #262d33;
+      }
+      & ul {
+        & li {
+          &:not(:last-child) {
+            border-bottom: 1px solid #d9dadb;
+          }
+          &:first-child {
+            border-top: 1px solid #d9dadb;
+          }
+          padding-top: 17px;
+          padding-bottom: 19px;
+          padding-left: 25px;
+          padding-right: 25px;
+          & h3 {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+
+            color: #3bbdc4;
+          }
+          & p {
+            margin-top: 8px;
+
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+            color: #4b5157;
+          }
+        }
+      }
+    }
   }
 
   & .cars {
