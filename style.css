@@ -24,6 +24,7 @@ ul {
   padding-bottom: 20px;
   position: relative;
   height: 1670px;
+  overflow-x: hidden;
 }
 .main .dark {
   background: #262d33;
@@ -122,37 +123,50 @@ ul {
   background-size: cover;
 }
 
+.animated.none {
+  transition-duration: 500ms;
+  transform: none;
+}
+
 .cars {
   background-image: url("./images/car.png");
 
   grid-area: cars;
   background-repeat: no-repeat;
   background-position: right top 18px;
+  transform: translateX(-1000px);
 }
 
 .art {
   background-image: url("./images/hand.png");
   grid-area: art;
+  transform: translateX(-1000px);
 }
 .columns {
   background: #6e99ae;
+  transform: translateX(1000px);
   grid-area: columns;
 }
 .cat {
   grid-area: cat;
+  transform: translateX(-1000px);
 }
 .text1 {
   grid-area: text1;
+  transform: translateX(-1000px);
 }
 .text2 {
   grid-area: text2;
+  transform: translateX(1000px);
 }
 
 .text3 {
   grid-area: text3;
+  transform: translateX(-1000px);
 }
 .text4 {
   grid-area: text4;
+  transform: translateX(1000px);
 }
 
 .flower {
